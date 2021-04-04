@@ -6,17 +6,17 @@ class School extends Component {
         this.state = {
             error: null,
             isLoaded: false,
-            texts: []
+            text: ""
         }
     }
     componentDidMount() {
-        fetch("https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=Vodka")
+        fetch(`http://127.0.0.1:8000/get_text/${this.props.folder}`)
             .then(res => res.json())
             .then(
                 (result) => {
                     this.setState({
                         isLoaded: true,
-                        texts: result.drinks
+                        text: result
                     })
                 },
                 (error) => {
@@ -29,22 +29,19 @@ class School extends Component {
     }
 
     render () {
-        const {error, isLoaded, texts} = this.state;
-        console.log(isLoaded);
+        const {error, isLoaded, text} = this.state;
         if (error) {
-            return <p>Error</p>
+            console.log(error);
+            return <p>Произошла ошибка. Попробуйте перезагрузить страницу</p>;
         } else {
             if (!isLoaded) {
-                return <p>Loading...</p>
+                return <p>Загрузка данных...</p>
             } else {
                 return (
-                    <ul>
-                        {texts.map(item => (
-                            <li>
-                                {item.strDrink}
-                            </li>
-                        ))}
-                    </ul>
+                    <div>
+                        <div>Школа</div>
+                        <div>{text}</div>
+                    </div>
                 )
             }
         }
