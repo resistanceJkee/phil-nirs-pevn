@@ -65,8 +65,14 @@ class School extends Component {
                     <div>
                         <h1 className="school_header">{this.props.nameSchool}</h1>
                         <div className="school_content">
-                            <NavLink to="/" className="go_back">←</NavLink>
+                            <NavLink to="/" className="go_back">
+                                <button className='school_item_button'>
+                                    <div className='school_item_button_line'></div>
+                                    ←
+                                </button>
+                            </NavLink>
                             <ul>
+                                
                                 <a href='#presenters'><li>Основные представители</li></a>
                                 <a href='#common'><li>Информация о школе</li></a>
                                 <a href='#ide'><li>Основные идеи учения</li></a>

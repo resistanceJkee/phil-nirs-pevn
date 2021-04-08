@@ -236,6 +236,7 @@ a, a:hover{
     left: -2em;
     top:0;
     font-size: 1.5em;
+    cursor: pointer;
 }
 .toMargin{
     margin-bottom: 3em;
