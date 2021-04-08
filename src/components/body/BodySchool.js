@@ -10,17 +10,14 @@ const BodySchool = (props) => {
     return (
         <div className="wrapper">
             {data.map(item => (
-                <div class = 'school_item' style={{backgroundImage: "url(" + linkToAssets + i++ + extension + ")"}}>
-                    <div class='school_item_description'>
-                        lorem ipsum dolor sit amet lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-                    </div>
-                    <div class="school_item_header" >
-                        <NavLink to={item.link}>{item.nameSchool}
-                        </NavLink>
+                <div className='school_item' style={{backgroundImage: "url(" + linkToAssets + i++ + extension + ")"}}>
+                    <div className='school_item_description'>{item.intro}</div>
+                    <div className="school_item_header" >
+                        <NavLink to={item.link}>{item.nameSchool}</NavLink>
                     </div>
                     <NavLink to={item.link}>
-                        <button class = 'school_item_button'>
-                            <div class='school_item_button_line'></div>
+                        <button className='school_item_button'>
+                            <div className='school_item_button_line'></div>
                             Подробнее
                         </button>
                     </NavLink>
