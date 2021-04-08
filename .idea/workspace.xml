@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="35068e39-f682-4e1f-bad5-b218df9f2716" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template-school/School.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template-school/School.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +23,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Color Scheme Font" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -34,7 +35,7 @@
       <option name="presentableId" value="Default" />
       <updated>1617865204698</updated>
       <workItem from="1617865208221" duration="1599000" />
-      <workItem from="1617868589934" duration="1380000" />
+      <workItem from="1617868589934" duration="5367000" />
     </task>
     <servers />
   </component>
