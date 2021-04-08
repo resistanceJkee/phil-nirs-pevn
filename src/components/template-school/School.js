@@ -77,9 +77,9 @@ class School extends Component {
                             
                             <b>Основные представители</b> - {text[0]}
                         </div>
-                        <div id='common'className="common_info">Основная информация</div>
+                        <div id='common' className="common_info">Основная информация</div>
                         <div>{text[1]}</div>
-                        <div id='ide'className="common_info">Основные идеи</div>
+                        <div id='ide' className="common_info">Основные идеи</div>
                         <div>{text[2]}</div>
                     </div>
                 )
