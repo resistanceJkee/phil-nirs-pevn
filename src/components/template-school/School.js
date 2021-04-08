@@ -38,6 +38,7 @@ class School extends Component {
             if (!isLoaded) {
                 return (
                     <div>
+                       
                         <div className="cssload-dots">
                             <div className="cssload-dot"></div>
                             <div className="cssload-dot"></div>
@@ -62,8 +63,23 @@ class School extends Component {
             } else {
                 return (
                     <div>
-                        <div>{this.props.nameSchool}</div>
+                        <h1 className="school_header">{this.props.nameSchool}</h1>
+                        <div className="school_content">
+                            <div class='go_back'>←</div>
+                            <ul>
+                                <a href='#presenters'><li>Основные представители</li></a>
+                                <a href='#common'><li>Информация о школе</li></a>
+                                <a href='#ide'><li>Основные идеи учения</li></a>
+                            </ul>
+                        </div>
+                        
+                        <div id='presenters' className="school_presenters">
+                            
+                            <b>Основные представители</b> - АРистотель пидарас тупой
+                        </div>
+                        <div id='common'className="common_info">Основная информация</div>
                         <div>{text}</div>
+                        <div id='ide'className="common_info">Основные идеи</div>
                     </div>
                 )
             }
