@@ -34,27 +34,24 @@ class School extends Component {
         const {error, isLoaded, text} = this.state;
         if (error) {
             console.log(error);
-            return <p>Произошла ошибка. Попробуйте перезагрузить страницу</p>;
+            return <p className="error">Произошла ошибка. Попробуйте перезагрузить страницу</p>;
         } else {
             if (!isLoaded) {
                 return (
                     <div>
                         <div className="cssload-dots">
-                            <div className="cssload-dot"></div>
-                            <div className="cssload-dot"></div>
-                            <div className="cssload-dot"></div>
-                            <div className="cssload-dot"></div>
-                            <div className="cssload-dot"></div>
+                            <div className="cssload-dot"/>
+                            <div className="cssload-dot"/>
+                            <div className="cssload-dot"/>
+                            <div className="cssload-dot"/>
+                            <div className="cssload-dot"/>
                         </div>
 
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg">
                             <defs>
                                 <filter id="goo">
-                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12"></feGaussianBlur>
-                                    <feColorMatrix in="blur" mode="matrix"
-                                                   values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7"
-                                                   result="goo"></feColorMatrix>
-
+                                    <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="12"/>
+                                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0	0 1 0 0 0	0 0 1 0 0	0 0 0 18 -7" result="goo"/>
                                 </filter>
                             </defs>
                         </svg>
@@ -67,12 +64,11 @@ class School extends Component {
                         <div className="school_content">
                             <NavLink to="/" className="go_back">
                                 <button className='school_item_button'>
-                                    <div className='school_item_button_line'></div>
+                                    <div className='school_item_button_line'/>
                                     ←
                                 </button>
                             </NavLink>
                             <ul>
-                                
                                 <a href='#presenters'><li>Основные представители</li></a>
                                 <a href='#common'><li>Информация о школе</li></a>
                                 <a href='#ide'><li>Основные идеи учения</li></a>
@@ -80,13 +76,12 @@ class School extends Component {
                         </div>
                         
                         <div id='presenters' className="school_presenters">
-                            
                             <b>Основные представители</b> - {text[0]}
                         </div>
-                        <div id='common'className="common_info">Основная информация</div>
-                        <div>{text[1]}</div>
-                        <div id='ide'className="common_info">Основные идеи</div>
-                        <div className="toMargin">{text[2]}</div>
+                        <div id='common' className="common_info">Основная информация</div>
+                        <pre>{text[1]}</pre>
+                        <div id='ide' className="common_info">Основные идеи</div>
+                        <pre className="toMargin">{text[2]}</pre>
                     </div>
                 )
             }
