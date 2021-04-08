@@ -74,7 +74,7 @@ class App extends Component {
                         <div className="content-side">
                             <Route path="/test" component={Test}/>
                             {data.map(item => (
-                                <Route path={item.link} render={(props) => (<School folder={item.folderName}/>)}/>
+                                <Route path={item.link} render={(props) => (<School folder={item.folderName} nameSchool={item.nameSchool}/>)}/>
                             ))}
                         </div>
                     </div>
