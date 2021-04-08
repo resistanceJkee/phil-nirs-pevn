@@ -80,6 +80,7 @@ class School extends Component {
                         <div id='common'className="common_info">Основная информация</div>
                         <div>{text}</div>
                         <div id='ide'className="common_info">Основные идеи</div>
+                        <div></div>
                     </div>
                 )
             }
