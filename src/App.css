@@ -1,3 +1,24 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-size: 20px;
+    color: rgb(252, 234, 255);
+   
+    background-color: #140024;
+}
+
+a, a:hover{
+    color: rgb(252, 234, 255);
+    text-decoration: none;
+    
+}
+
+.school_item_header a{
+    color: #b66dee;
+    font-size: 1.3em;
+}
+
 .app {
     position: relative;
     width: 100%;
@@ -15,4 +36,67 @@
     min-width: 300px;
     margin-left: 50%;
     transform: translate(-50%);
+}
+.school_item_header{
+    transition: all .3s cubic-bezier(.28,-0.43,.89,1.46);
+}
+
+.school_item{
+    transition: all .3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+    background-color: #1e0d2c;
+    opacity: .9;
+    margin: .8em;
+    padding: .2em;
+    height: 30em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.289), 
+        -4px -3px 12px 0px rgba(255, 255, 255, 0.085),
+        10px 10px 50px -5px rgba(0, 0, 0, 0.1) inset, 
+        -10px -10px 50px -5px rgba(0, 0, 0, 0.1) inset;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top: 1px solid #ffffff1c;
+    border-left: 1px solid #ffffff1c;
+}
+.school_item_button{
+    opacity: .3;
+    font-size: .8em;
+    transform: translateY(calc(100% + 1.2em));
+    position: absolute;
+    bottom: 1em;
+    transition: all .3s ease-in-out;
+    right: 1em;
+    padding: .8em;
+    outline: none;
+    border-radius: 3px;
+    backdrop-filter: blur(2px);
+    border-top: 1px solid #ffffff57;
+    border-left: 1px solid #ffffff57;
+    background-color: #b66dee25;
+}
+
+.school_item:hover .school_item_button{
+    opacity: 1;
+    transform: translateY(0);
+    cursor: pointer;
+}
+.school_item:hover .school_item_header{
+    transform: scale(1.2);
+}
+
+.school_item:hover{
+    box-shadow: -7px -7px 10px 0px rgba(0, 0, 0, 0.289), 7px 7px 12px 0px rgba(255, 255, 255, 0.085);
+}
+.school_item_button:hover p{
+    color: #b66dee !important;
+    outline: none;
+    border-radius: 4px;
+    backdrop-filter: blur(4px);
+    border-top: 1px solid #ffffff5b;
+    border-left: 1px solid #ffffff60;
 }

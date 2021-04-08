@@ -3,14 +3,14 @@
     width: 100%;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 5px;
+    padding: 0 5em ;
 }
 
 .wrapper > * {
-    height: 20vh;
+    height: 10em;
     text-align: center;
     border-radius: 5px;
-    border: 1px solid black;
 }
