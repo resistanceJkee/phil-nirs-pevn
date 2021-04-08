@@ -107,7 +107,7 @@ a, a:hover{
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
     right: 1em;
-    padding: .8em;
+    padding: .6em;
     outline: none;
     border-radius: 3px;
     -webkit-backdrop-filter: blur(2px);
@@ -185,7 +185,7 @@ a, a:hover{
     -webkit-backdrop-filter: blur(2px);
             backdrop-filter: blur(2px);
     background-color: #b66dee11;
-    padding: 1em;
+    padding: .5em;
 }
 
 .school_item:hover .school_item_description{
@@ -197,7 +197,14 @@ a, a:hover{
 }
     
 
-
+.school_item_description_intro{
+    height: 60%;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical
+}
 
 
 

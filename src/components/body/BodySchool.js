@@ -11,7 +11,11 @@ const BodySchool = (props) => {
         <div className="wrapper">
             {data.map(item => (
                 <div className='school_item' style={{backgroundImage: "url(" + linkToAssets + i++ + extension + ")"}}>
-                    <div className='school_item_description'>{item.intro}</div>
+                    <div className='school_item_description'>
+                        <p className="school_item_description_intro">
+                            {item.intro}
+                        </p>
+                    </div>
                     <div className="school_item_header" >
                         <NavLink to={item.link}>{item.nameSchool}</NavLink>
                     </div>
