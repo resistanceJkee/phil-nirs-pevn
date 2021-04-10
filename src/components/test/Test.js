@@ -13,7 +13,8 @@ class Test extends Component {
             trueAnswer: "",
             id: 1,
             countQuestions: 0,
-            nextComponent: false
+            nextComponent: false,
+            percentage: 10.00
         }
     }
 
@@ -54,7 +55,8 @@ class Test extends Component {
         } else {
             this.setState({
                 nextComponent: true
-            })
+            });
+            this.calcPercentage();
         }
 
     }
@@ -72,6 +74,20 @@ class Test extends Component {
         this.setState({
             currentAnswer: e.target.value
         });
+    }
+
+    calcPercentage = () => {
+        const arr = this.state.arrayMyAnswers;
+        let counter = 0;
+        for (let i in arr) {
+            if (i == true) {
+                counter++;
+                console.log(counter);
+            }
+        }
+        this.setState({
+            percentage: parseInt(counter/(arr.length)*100)
+        })
     }
 
     render() {
@@ -126,7 +142,7 @@ class Test extends Component {
             return(
                 <div className="results_test">
                     <h1 className="school_header">Результат вашего теста</h1>
-                    <div className='center_res'><b>%</b></div>
+                    <div className='center_res'><b>{this.state.percentage}% правильных ответов</b></div>
                 </div> )
         }
     }
