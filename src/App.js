@@ -69,9 +69,9 @@ class App extends Component {
                             } exact/>
                         </div>
                         <div className="content-side">
-                            <Route path="/test" component={Test}/>
+                            <Route path="/test/" component={Test} exact/>
                             {data.map(item => (
-                                <Route path={item.link} render={(props) => (<School engName={item.engName} nameSchool={item.nameSchool}/>)}/>
+                                <Route path={item.link} render={(props) => (<School engName={item.engName} nameSchool={item.nameSchool}/>)} exact/>
                             ))}
                         </div>
                     </div>
