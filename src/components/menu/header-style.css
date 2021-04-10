@@ -15,9 +15,11 @@ header > * {
     font-size: 20px;
     margin-left: 1rem;
 }
-/*.head .active{*/
-/*    color: #d297ff;*/
-/*}*/
+
+.head .active{
+   color: #d297ff;
+}
+
 @media screen and (max-width: 800px){
     .head{
         padding: 0;
