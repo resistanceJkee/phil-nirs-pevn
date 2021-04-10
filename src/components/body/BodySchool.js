@@ -17,7 +17,7 @@ const BodySchool = (props) => {
                         </p>
                     </div>
                     <div className="school_item_header" >
-                        <NavLink to={item.link}>{item.nameSchool}</NavLink>
+                        {item.nameSchool}
                     </div>
                     <NavLink to={item.link}>
                         <button className='school_item_button'>

@@ -13,7 +13,7 @@ body{
     font-size: 20px;
     color: rgb(252, 234, 255);
    
-    background-color: #140024;
+    background-color: #19002e;
 }
 
 a, a:hover{
@@ -22,9 +22,9 @@ a, a:hover{
     
 }
 
-.school_item_header a{
-    color: #b66dee;
-    font-size: 1.3em;
+.school_item_header{
+    color: #c993f1ee;
+    font-size: 1.2em;
 }
 
 .app {
@@ -64,7 +64,7 @@ a, a:hover{
     transition: all .3s ease-in-out;
     overflow: hidden;
     position: relative;
-    background-color: #1e0d2c;
+    background-color: #210f31;
     opacity: .9;
     margin: .8em;
     padding: .2em;
@@ -116,9 +116,10 @@ a, a:hover{
     color: #868686;
     border-top: 1px solid #ffffff57;
     border-left: 1px solid #ffffff57;
-    background-color: #b66dee25;
+    background-color: #b66dee17;
     -webkit-box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2);
     box-shadow: 0px 5px 20px 2px rgba(0, 0, 0, 0.2);
+    opacity: 1;
 }
 
 .school_item:hover .school_item_button{
@@ -147,6 +148,7 @@ a, a:hover{
     -moz-backdrop-filter: blur(4px);
     border-top: 1px solid #ffffff5b;
     border-left: 1px solid #ffffff60;
+    cursor:pointer;
 }
 
 .school_item_button_line{
@@ -164,7 +166,7 @@ a, a:hover{
     transition: all .3s ease-in-out;
 }
 .school_item_button:hover .school_item_button_line{
-    left: 120%;
+    left: 130%;
 }
 
 
@@ -512,4 +514,14 @@ a, a:hover{
 	100% {
 		-webkit-transform: rotate(1080deg);
 	}
+}
+
+
+
+
+
+@media screen and (max-width: 800px){
+    .school_item{
+        margin: .5em;
+    }
 }

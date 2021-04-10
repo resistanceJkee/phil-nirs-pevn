@@ -14,3 +14,23 @@
     text-align: center;
     border-radius: 5px;
 }
+.content-side {
+    min-width: 60%
+}
+
+
+@media screen and (max-width: 800px){
+    body{
+        font-size: 15px;
+    }
+    .wrapper {
+        margin-top: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2px;
+        padding: 0 .1em ;
+    }
+    .content-side {
+        min-width: 90%
+    }
+}

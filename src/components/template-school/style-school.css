@@ -1,4 +1,10 @@
-p {
+.text-justify {
     text-align: justify;
     text-indent: 25px;
+}
+
+.to_test{
+    position: absolute;
+    top: 0;
+    right: -5em;
 }
