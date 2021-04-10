@@ -1,5 +1,6 @@
 import {Component} from 'react';
 import {NavLink} from "react-router-dom";
+import "./style-school.css";
 
 class School extends Component {
     constructor(props) {
@@ -79,9 +80,9 @@ class School extends Component {
                             <b>Основные представители</b> - {text[0]}
                         </div>
                         <div id='common' className="common_info">Основная информация</div>
-                        <pre>{text[1]}</pre>
+                        <p>{text[1]}</p>
                         <div id='ide' className="common_info">Основные идеи</div>
-                        <pre className="toMargin">{text[2]}</pre>
+                        <p className="toMargin">{text[2]}</p>
                     </div>
                 )
             }
