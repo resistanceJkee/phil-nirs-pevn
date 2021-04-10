@@ -5,11 +5,23 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    border: 1px solid black;
+    background-color: #210f31;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.1);
+    padding: 0 10%;
 }
 
 header > * {
     text-decoration: none;
     font-size: 20px;
     margin-left: 1rem;
+}
+
+.head .active{
+   color: #d297ff;
+}
+
+@media screen and (max-width: 800px){
+    .head{
+        padding: 0;
+    }
 }

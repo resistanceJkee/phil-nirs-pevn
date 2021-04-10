@@ -13,7 +13,7 @@ class School extends Component {
     }
 
     componentDidMount() {
-        fetch(`http://127.0.0.1:8000/get_text/${this.props.folder}`)
+        fetch(`http://127.0.0.1:8000/get_text/${this.props.engName}`)
             .then(res => res.json())
             .then(
                 (result) => {
@@ -69,20 +69,25 @@ class School extends Component {
                                     ←
                                 </button>
                             </NavLink>
+                            <NavLink to="/test" className="to_test">
+                                <button title='Пройти тест' className='school_item_button'>
+                                    <div className='school_item_button_line'/>
+                                    📄
+                                </button>
+                            </NavLink>
                             <ul>
                                 <a href='#presenters'><li>Основные представители</li></a>
                                 <a href='#common'><li>Информация о школе</li></a>
                                 <a href='#ide'><li>Основные идеи учения</li></a>
                             </ul>
                         </div>
-                        
                         <div id='presenters' className="school_presenters">
                             <b>Основные представители</b> - {text[0]}
                         </div>
                         <div id='common' className="common_info">Основная информация</div>
-                        <p>{text[1]}</p>
+                        <p className='text-justify'>{text[1]}</p>
                         <div id='ide' className="common_info">Основные идеи</div>
-                        <p className="toMargin">{text[2]}</p>
+                        <p className="text-justify toMargin">{text[2]}</p>
                     </div>
                 )
             }

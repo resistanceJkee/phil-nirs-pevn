@@ -6,6 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="35068e39-f682-4e1f-bad5-b218df9f2716" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
+=======
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template-school/School.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template-school/School.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/template-school/style-school.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template-school/style-school.css" afterDir="false" />
+>>>>>>> e10971620059303999d28be8410c8c82aa862ede
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +80,12 @@
       <option name="presentableId" value="Default" />
       <updated>1617865204698</updated>
       <workItem from="1617865208221" duration="1599000" />
+<<<<<<< HEAD
+      <workItem from="1617868589934" duration="6866000" />
+      <workItem from="1618033364485" duration="27000" />
+      <workItem from="1618033439039" duration="711000" />
+      <workItem from="1618034222632" duration="324000" />
+=======
       <workItem from="1617868589934" duration="5367000" />
       <workItem from="1617881834677" duration="2924000" />
       <workItem from="1617886139520" duration="3179000" />
@@ -81,8 +93,12 @@
       <workItem from="1617943955372" duration="30000" />
       <workItem from="1617943993543" duration="175000" />
       <workItem from="1617974739358" duration="15000" />
+<<<<<<< HEAD
       <workItem from="1618032266059" duration="30000" />
       <workItem from="1618061307369" duration="18000" />
+=======
+>>>>>>> e58ec30ab639e77b3588239099814f37f248d4ca
+>>>>>>> e10971620059303999d28be8410c8c82aa862ede
     </task>
     <servers />
   </component>
