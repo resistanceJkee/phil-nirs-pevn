@@ -28,7 +28,7 @@ const Test = (props) => {
                         <label for="color-5">Green</label>
                     </div>
                 </div>
-                <button title='Пройти тест' className='school_item_button'>
+                <button className='school_item_button'>
                     <div className='school_item_button_line'/>
                     Ответить
                 </button>
