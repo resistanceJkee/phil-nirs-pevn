@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import {NavLink} from "react-router-dom";
 
 class Test extends Component {
     constructor(props) {
@@ -81,6 +82,12 @@ class Test extends Component {
                 <div>
                     <h1 className="school_header">Тест на знание темы</h1>
                     <div className='test_container'>
+                            <NavLink to="/" className="go_back test_b">
+                                <button className='school_item_button test_b'>
+                                    <div className='school_item_button_line'/>
+                                    ←
+                                </button>
+                            </NavLink>
 
                         <div className="test_question">{question}</div>
                         <div className="test_variants">
@@ -116,7 +123,11 @@ class Test extends Component {
                 </div>
             );
         } else {
-            return <p>Красава!</p>
+            return(
+                <div className="results_test">
+                    <h1 className="school_header">Результат вашего теста</h1>
+                    <div className='center_res'><b>%</b></div>
+                </div> )
         }
     }
 }

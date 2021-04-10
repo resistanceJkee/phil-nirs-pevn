@@ -531,6 +531,7 @@ a, a:hover{
 }
 
 .test_container{
+    position: relative;
     width: 100%;
     padding: 1em;
     display: flex;
@@ -627,3 +628,25 @@ label, label::before{
     flex-wrap: wrap;
     justify-content: space-around;
 }    
+
+.center_res{
+    text-align: center;
+    font-size: 2em;
+}
+.results_test{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.test_b{
+    top: 0;
+    left: -2em
+}
+
+@media screen and (max-width: 800px){
+    .test_b{
+        display: none
+    }
+}
