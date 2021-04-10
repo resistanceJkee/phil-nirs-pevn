@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="35068e39-f682-4e1f-bad5-b218df9f2716" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template-school/School.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template-school/School.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/template-school/style-school.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/template-school/style-school.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,7 +30,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.notifications" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="npm.start">
@@ -83,6 +81,8 @@
       <workItem from="1617943955372" duration="30000" />
       <workItem from="1617943993543" duration="175000" />
       <workItem from="1617974739358" duration="15000" />
+      <workItem from="1618032266059" duration="30000" />
+      <workItem from="1618061307369" duration="18000" />
     </task>
     <servers />
   </component>
