@@ -4,7 +4,9 @@
 * Autoprefixer: v9.7.6
 * Browsers: last 4 version
 */
-
+html{
+    overflow-x: hidden;
+}
 .active-link {
 	color: #c993f1ee;
 }
@@ -68,7 +70,7 @@ a, a:hover{
     transition: all .3s ease-in-out;
     overflow: hidden;
     position: relative;
-    background-color: #210f31;
+    background-color: #27123a;
     opacity: .9;
     margin: .8em;
     padding: .2em;
@@ -528,6 +530,9 @@ a, a:hover{
     .school_item{
         margin: .5em;
     }
+    .to_hidden{
+        display: none;
+    }
 }
 
 .test_container{
@@ -645,8 +650,18 @@ label, label::before{
     left: -2em
 }
 
+
+.main_info{
+    text-align: center;
+    padding: 1em 8%;   
+}
 @media screen and (max-width: 800px){
     .test_b{
         display: none
+    }
+    .main_info{
+        text-align: center;
+        padding: .5em 2%; 
+        text-align: justify;  
     }
 }
