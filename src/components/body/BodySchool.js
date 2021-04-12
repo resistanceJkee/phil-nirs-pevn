@@ -4,13 +4,10 @@ import "./style-body.css";
 
 const BodySchool = (props) => {
     const data = props.data;
-    let i = 0;
-    let linkToAssets = "../static/assets/";
-    let extension = ".png";
     return (
         <div className="wrapper">
             {data.map(item => (
-                <div key={item.link} className='school_item' style={{backgroundImage: "url(" + linkToAssets + i++ + extension + ")"}}>
+                <div key={item.link} className='school_item'>
                     <div className='school_item_description'>
                         <p className="school_item_description_intro">
                             {item.intro}
