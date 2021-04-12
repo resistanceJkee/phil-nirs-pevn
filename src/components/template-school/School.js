@@ -70,7 +70,7 @@ class School extends Component {
                                 </button>
                             </NavLink>
                             <NavLink to="/test" className="to_test to_hidden">
-                                <button title='Пройти тест' className='school_item_button'>
+                                <button title='Пройти тест' className='school_item_button button-school'>
                                     <div className='school_item_button_line'/>
                                     📄
                                 </button>

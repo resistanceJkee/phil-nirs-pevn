@@ -97,7 +97,7 @@ class Test extends Component {
                 <div>
                     <h1 className="school_header">Тест на знание темы</h1>
                     <div className='test_container'>
-                            <NavLink to="/" className="go_back test_b">
+                            <NavLink to="/" className="go_back test_b button-test">
                                 <button className='school_item_button test_b'>
                                     <div className='school_item_button_line'/>
                                     ←

@@ -662,6 +662,15 @@ label, label::before {
     text-align: center;
     padding: 1em 8%;   
 }
+.button-school{
+    font-size: 1.15em;
+    left: 0em;
+}
+
+.button-test{
+    left: -4em;
+    top: -.8em
+}
 
 @media screen and (max-width: 800px) {
     .test_b {
