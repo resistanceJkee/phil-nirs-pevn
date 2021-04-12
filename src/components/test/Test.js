@@ -13,7 +13,8 @@ class Test extends Component {
             trueAnswer: "",
             id: 1,
             countQuestions: 0,
-            nextComponent: false
+            nextComponent: false,
+            percentage: 10.00
         }
     }
 
@@ -54,7 +55,8 @@ class Test extends Component {
         } else {
             this.setState({
                 nextComponent: true
-            })
+            });
+            this.calcPercentage();
         }
 
     }
@@ -74,6 +76,19 @@ class Test extends Component {
         });
     }
 
+    calcPercentage = () => {
+        const arr = this.state.arrayMyAnswers;
+        let counter = 0;
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] === true) {
+                counter++;
+            }
+        }
+        this.setState({
+            percentage: Math.round(counter/(arr.length)*100)
+        })
+    }
+
     render() {
         const answers = this.state.answers;
         const question = this.state.question;
@@ -91,28 +106,28 @@ class Test extends Component {
 
                         <div className="test_question">{question}</div>
                         <div className="test_variants">
-                            <div class="radio">
+                            <div className="radio">
                                 <input className="custom-radio" type="radio" id="color-1" name="color" value={answers[0]}
                                        onClick={e => this.getValueSelectedButton(e)} defaultChecked ref={this.ref}/>
-                                <label for="color-1">{answers[0]}</label>
+                                <label htmlFor="color-1">{answers[0]}</label>
                             </div>
 
                             <div className="radio">
                                 <input className="custom-radio" type="radio" id="color-2" name="color" value={answers[1]}
                                        onClick={e => this.getValueSelectedButton(e)} />
-                                <label for="color-2">{answers[1]}</label>
+                                <label htmlFor="color-2">{answers[1]}</label>
                             </div>
 
                             <div className="radio">
                                 <input className="custom-radio" type="radio" id="color-4" name="color" value={answers[2]}
                                        onClick={e => this.getValueSelectedButton(e)} />
-                                <label for="color-4">{answers[2]}</label>
+                                <label htmlFor="color-4">{answers[2]}</label>
                             </div>
 
                             <div className="radio">
                                 <input className="custom-radio" type="radio" id="color-5" name="color" value={answers[3]}
                                        onClick={e => this.getValueSelectedButton(e)} />
-                                <label for="color-5">{answers[3]}</label>
+                                <label htmlFor="color-5">{answers[3]}</label>
                             </div>
                         </div>
                         <button className='school_item_button' onClick={this.getNextQuestion}>
@@ -123,11 +138,12 @@ class Test extends Component {
                 </div>
             );
         } else {
-            return(
+            return (
                 <div className="results_test">
                     <h1 className="school_header">Результат вашего теста</h1>
-                    <div className='center_res'><b>%</b></div>
-                </div> )
+                    <div className='center_res'><b>{this.state.percentage}% правильных ответов</b></div>
+                </div>
+            )
         }
     }
 }

@@ -4,10 +4,8 @@ import "./style-body.css";
 
 const BodySchool = (props) => {
     const data = props.data;
-    let i = 0;
-    let linkToAssets = "../static/assets/";
-    let extension = ".png";
     return (
+
         <div>
             <div className="main_info">
                 <h1 className="school_header">Введение в тему</h1>
@@ -15,7 +13,7 @@ const BodySchool = (props) => {
             </div>
             <div className="wrapper">
                 {data.map(item => (
-                    <div className='school_item' style={{backgroundImage: "url(" + linkToAssets + i++ + extension + ")"}}>
+                    <div className='school_item'>
                         <div className='school_item_description'>
                             <p className="school_item_description_intro">
                                 {item.intro}
@@ -32,6 +30,7 @@ const BodySchool = (props) => {
                         </NavLink>
                         
                     </div>))}
+
                     
             </div>
         </div>    

@@ -8,27 +8,28 @@ html{
     overflow-x: hidden;
 }
 .active-link {
-	color: #c993f1ee;
+    color: #c993f1ee;
 }
 
-*{
+* {
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
-body{
+
+body {
     font-size: 20px;
     color: rgb(252, 234, 255);
-   
+
     background-color: #19002e;
 }
 
-a, a:hover{
+a, a:hover {
     color: rgb(252, 234, 255);
     text-decoration: none;
-    
+
 }
 
-.school_item_header{
+.school_item_header {
     color: #c993f1ee;
     font-size: 1.2em;
 }
@@ -41,8 +42,8 @@ a, a:hover{
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 }
 
 .school-wrapper {
@@ -55,16 +56,17 @@ a, a:hover{
     min-width: 300px;
     margin-left: 50%;
     -webkit-transform: translate(-50%);
-        -ms-transform: translate(-50%);
-            transform: translate(-50%);
-}
-.school_item_header{
-    -webkit-transition: all .3s cubic-bezier(.28,-0.43,.89,1.46);
-    -o-transition: all .3s cubic-bezier(.28,-0.43,.89,1.46);
-    transition: all .3s cubic-bezier(.28,-0.43,.89,1.46);
+    -ms-transform: translate(-50%);
+    transform: translate(-50%);
 }
 
-.school_item{
+.school_item_header {
+    -webkit-transition: all .3s cubic-bezier(.28, -0.43, .89, 1.46);
+    -o-transition: all .3s cubic-bezier(.28, -0.43, .89, 1.46);
+    transition: all .3s cubic-bezier(.28, -0.43, .89, 1.46);
+}
+
+.school_item {
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
@@ -79,34 +81,35 @@ a, a:hover{
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.289), 
-        -4px -3px 12px 0px rgba(255, 255, 255, 0.085),
-        10px 10px 50px -5px rgba(0, 0, 0, 0.1) inset, 
-        -10px -10px 50px -5px rgba(0, 0, 0, 0.1) inset;
-            box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.289), 
-        -4px -3px 12px 0px rgba(255, 255, 255, 0.085),
-        10px 10px 50px -5px rgba(0, 0, 0, 0.1) inset, 
-        -10px -10px 50px -5px rgba(0, 0, 0, 0.1) inset;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.289),
+    -4px -3px 12px 0px rgba(255, 255, 255, 0.085),
+    10px 10px 50px -5px rgba(0, 0, 0, 0.1) inset,
+    -10px -10px 50px -5px rgba(0, 0, 0, 0.1) inset;
+    box-shadow: 7px 7px 10px 0px rgba(0, 0, 0, 0.289),
+    -4px -3px 12px 0px rgba(255, 255, 255, 0.085),
+    10px 10px 50px -5px rgba(0, 0, 0, 0.1) inset,
+    -10px -10px 50px -5px rgba(0, 0, 0, 0.1) inset;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     border-top: 1px solid #ffffff1c;
     border-left: 1px solid #ffffff1c;
 }
-.school_item_button{
+
+.school_item_button {
     z-index: 300;
     -moz-z-index: 300;
     overflow: hidden;
     opacity: .3;
     font-size: .8em;
     -webkit-transform: translateY(calc(100% + 1.2em));
-        -ms-transform: translateY(calc(100% + 1.2em));
-            transform: translateY(calc(100% + 1.2em));
+    -ms-transform: translateY(calc(100% + 1.2em));
+    transform: translateY(calc(100% + 1.2em));
     position: absolute;
     bottom: 1em;
     -webkit-transition: all .3s ease-in-out;
@@ -117,7 +120,7 @@ a, a:hover{
     outline: none;
     border-radius: 3px;
     -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
     -moz-backdrop-filter: blur(2px);
     color: #868686;
     border-top: 1px solid #ffffff57;
@@ -128,57 +131,58 @@ a, a:hover{
     opacity: 1;
 }
 
-.school_item:hover .school_item_button{
+.school_item:hover .school_item_button {
     opacity: 1;
     -webkit-transform: translateY(0);
-        -ms-transform: translateY(0);
-            transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
     cursor: pointer;
 }
-.school_item:hover .school_item_header{
+
+.school_item:hover .school_item_header {
     -webkit-transform: scale(1.2);
-        -ms-transform: scale(1.2);
-            transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
-.school_item:hover{
+.school_item:hover {
     -webkit-box-shadow: -7px -7px 10px 0px rgba(0, 0, 0, 0.289), 7px 7px 12px 0px rgba(255, 255, 255, 0.085);
-            box-shadow: -7px -7px 10px 0px rgba(0, 0, 0, 0.289), 7px 7px 12px 0px rgba(255, 255, 255, 0.085);
+    box-shadow: -7px -7px 10px 0px rgba(0, 0, 0, 0.289), 7px 7px 12px 0px rgba(255, 255, 255, 0.085);
 }
+
 .school_item_button:hover {
     color: #e9d0fc !important;
     outline: none;
     border-radius: 4px;
     -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     -moz-backdrop-filter: blur(4px);
     border-top: 1px solid #ffffff5b;
     border-left: 1px solid #ffffff60;
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.school_item_button_line{
+.school_item_button_line {
     position: absolute;
     top: 0;
     left: -2em;
     width: 1em;
     height: 120%;
-    background-color:#b66dee;
+    background-color: #b66dee;
     -webkit-transform: skewX(-30deg);
-        -ms-transform: skewX(-30deg);
-            transform: skewX(-30deg);
+    -ms-transform: skewX(-30deg);
+    transform: skewX(-30deg);
     -webkit-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
 }
-.school_item_button:hover .school_item_button_line{
+
+.school_item_button:hover .school_item_button_line {
     left: 130%;
 }
 
 
-
-
-.school_item_description{
+.school_item_description {
     border-radius: 4px;
     z-index: 200;
     -moz-zindex: 200;
@@ -191,343 +195,343 @@ a, a:hover{
     width: 100%;
     height: 100%;
     -webkit-backdrop-filter: blur(2px);
-            backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
     background-color: #b66dee11;
     padding: .5em;
 }
 
-.school_item:hover .school_item_description{
+.school_item:hover .school_item_description {
     top: 0;
     left: 0;
     -webkit-backdrop-filter: blur(4px);
-            backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
     -moz-backdrop-filter: blur(4px);
 }
-    
 
-.school_item_description_intro{
+
+.school_item_description_intro {
     height: 60%;
     overflow: hidden;
-	text-overflow: ellipsis;
-	display: -webkit-box;
-	-webkit-line-clamp: 4;
-	-webkit-box-orient: vertical
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical
 }
 
-.school_header{
-    color:#b66dee;
+.school_header {
+    color: #b66dee;
     font-size: 1.2em;
     font-weight: normal;
     text-align: center;
 }
-.school_content li{
+
+.school_content li {
     margin: 0.5em 0;
     cursor: pointer;
 }
-.school_content{
+
+.school_content {
     background-color: #230e34;
     padding: 1em;
     border-radius: 6px;
     margin: 1em 0em;
     position: relative;
 }
-.school_presenters{
+
+.school_presenters {
     margin: 1em 0em;
 }
-.common_info{
+
+.common_info {
     margin: 0.8em 0em;
     text-align: center;
-    font-size: 1.2em; 
+    font-size: 1.2em;
 }
-.go_back{
+
+.go_back {
     position: absolute;
     left: -2em;
-    top:0;
+    top: 0;
     font-size: 1.5em;
     cursor: pointer;
 }
-.toMargin{
+
+.toMargin {
     margin-bottom: 3em;
 }
 
 
-
-
-
-
-
-
-
 .cssload-dots {
-	width: 0;
-	height: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	bottom: 0;
-	right: 0;
-	margin: auto;
-	outline: 1px solid red;
-	filter: url(#goo);
-		-o-filter: url(#goo);
-		-ms-filter: url(#goo);
-		-webkit-filter: url(#goo);
-		-moz-filter: url(#goo);
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    outline: 1px solid red;
+    filter: url(#goo);
+    -o-filter: url(#goo);
+    -ms-filter: url(#goo);
+    -webkit-filter: url(#goo);
+    -moz-filter: url(#goo);
 }
 
 .cssload-dot {
-	width: 0;
-	height: 0;
-	position: absolute;
-	left: 0;
-	top: 0;
-}
-.cssload-dot:before {
-	content: "";
-	width: 34px;
-	height: 34px;
-	border-radius: 49px;
-	background: rgb(251,211,1);
-	position: absolute;
-	left: 50%;
-	transform: translateY(0);
-		-o-transform: translateY(0);
-		-ms-transform: translateY(0);
-		-webkit-transform: translateY(0);
-		-moz-transform: translateY(0);
-	margin-left: -17.5px;
-	margin-top: -17.5px;
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
+.cssload-dot:before {
+    content: "";
+    width: 34px;
+    height: 34px;
+    border-radius: 49px;
+    background: rgb(251, 211, 1);
+    position: absolute;
+    left: 50%;
+    transform: translateY(0);
+    -o-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    margin-left: -17.5px;
+    margin-top: -17.5px;
+}
 
 
 .cssload-dot:nth-child(5):before {
-	z-index: 100;
-	width: 44.5px;
-	height: 44.5px;
-	margin-left: -21.75px;
-	margin-top: -21.75px;
-	animation: cssload-dot-colors 4.6s ease infinite;
-		-o-animation: cssload-dot-colors 4.6s ease infinite;
-		-ms-animation: cssload-dot-colors 4.6s ease infinite;
-		-webkit-animation: cssload-dot-colors 4.6s ease infinite;
-		-moz-animation: cssload-dot-colors 4.6s ease infinite;
+    z-index: 100;
+    width: 44.5px;
+    height: 44.5px;
+    margin-left: -21.75px;
+    margin-top: -21.75px;
+    animation: cssload-dot-colors 4.6s ease infinite;
+    -o-animation: cssload-dot-colors 4.6s ease infinite;
+    -ms-animation: cssload-dot-colors 4.6s ease infinite;
+    -webkit-animation: cssload-dot-colors 4.6s ease infinite;
+    -moz-animation: cssload-dot-colors 4.6s ease infinite;
 }
 
 
 .cssload-dot:nth-child(1) {
-	animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
-		-o-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
-		-ms-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
-		-webkit-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
-		-moz-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+    animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+    -o-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+    -ms-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+    -webkit-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
+    -moz-animation: cssload-dot-rotate-1 4.6s 0s linear infinite;
 }
+
 .cssload-dot:nth-child(1):before {
-	background-color: rgb(255,50,112);
-	animation: cssload-dot-move 4.6s 0s ease infinite;
-		-o-animation: cssload-dot-move 4.6s 0s ease infinite;
-		-ms-animation: cssload-dot-move 4.6s 0s ease infinite;
-		-webkit-animation: cssload-dot-move 4.6s 0s ease infinite;
-		-moz-animation: cssload-dot-move 4.6s 0s ease infinite;
+    background-color: rgb(255, 50, 112);
+    animation: cssload-dot-move 4.6s 0s ease infinite;
+    -o-animation: cssload-dot-move 4.6s 0s ease infinite;
+    -ms-animation: cssload-dot-move 4.6s 0s ease infinite;
+    -webkit-animation: cssload-dot-move 4.6s 0s ease infinite;
+    -moz-animation: cssload-dot-move 4.6s 0s ease infinite;
 }
 
 .cssload-dot:nth-child(2) {
-	animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
-		-o-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
-		-ms-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
-		-webkit-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
-		-moz-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+    animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+    -o-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+    -ms-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+    -webkit-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
+    -moz-animation: cssload-dot-rotate-2 4.6s 1.15s linear infinite;
 }
+
 .cssload-dot:nth-child(2):before {
-	background-color: rgb(32,139,241);
-	animation: cssload-dot-move 4.6s 1.15s ease infinite;
-		-o-animation: cssload-dot-move 4.6s 1.15s ease infinite;
-		-ms-animation: cssload-dot-move 4.6s 1.15s ease infinite;
-		-webkit-animation: cssload-dot-move 4.6s 1.15s ease infinite;
-		-moz-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+    background-color: rgb(32, 139, 241);
+    animation: cssload-dot-move 4.6s 1.15s ease infinite;
+    -o-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+    -ms-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+    -webkit-animation: cssload-dot-move 4.6s 1.15s ease infinite;
+    -moz-animation: cssload-dot-move 4.6s 1.15s ease infinite;
 }
 
 .cssload-dot:nth-child(3) {
-	animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
-		-o-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
-		-ms-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
-		-webkit-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
-		-moz-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+    animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+    -o-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+    -ms-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+    -webkit-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
+    -moz-animation: cssload-dot-rotate-3 4.6s 2.3s linear infinite;
 }
+
 .cssload-dot:nth-child(3):before {
-	background-color: rgb(175,225,2);
-	animation: cssload-dot-move 4.6s 2.3s ease infinite;
-		-o-animation: cssload-dot-move 4.6s 2.3s ease infinite;
-		-ms-animation: cssload-dot-move 4.6s 2.3s ease infinite;
-		-webkit-animation: cssload-dot-move 4.6s 2.3s ease infinite;
-		-moz-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+    background-color: rgb(175, 225, 2);
+    animation: cssload-dot-move 4.6s 2.3s ease infinite;
+    -o-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+    -ms-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+    -webkit-animation: cssload-dot-move 4.6s 2.3s ease infinite;
+    -moz-animation: cssload-dot-move 4.6s 2.3s ease infinite;
 }
 
 .cssload-dot:nth-child(4) {
-	animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
-		-o-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
-		-ms-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
-		-webkit-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
-		-moz-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+    animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+    -o-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+    -ms-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+    -webkit-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
+    -moz-animation: cssload-dot-rotate-4 4.6s 3.45s linear infinite;
 }
+
 .cssload-dot:nth-child(4):before {
-	background-color: rgb(251,211,1);
-	animation: cssload-dot-move 4.6s 3.45s ease infinite;
-		-o-animation: cssload-dot-move 4.6s 3.45s ease infinite;
-		-ms-animation: cssload-dot-move 4.6s 3.45s ease infinite;
-		-webkit-animation: cssload-dot-move 4.6s 3.45s ease infinite;
-		-moz-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+    background-color: rgb(251, 211, 1);
+    animation: cssload-dot-move 4.6s 3.45s ease infinite;
+    -o-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+    -ms-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+    -webkit-animation: cssload-dot-move 4.6s 3.45s ease infinite;
+    -moz-animation: cssload-dot-move 4.6s 3.45s ease infinite;
 }
 
 @keyframes cssload-dot-move {
-	0% {
-		-webkit-transform: translateY(0);
-		        transform: translateY(0);
-	}
-	18%, 22% {
-		-webkit-transform: translateY(-68px);
-		        transform: translateY(-68px);
-	}
-	40%, 100% {
-		-webkit-transform: translateY(0);
-		        transform: translateY(0);
-	}
+    0% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
+    18%, 22% {
+        -webkit-transform: translateY(-68px);
+        transform: translateY(-68px);
+    }
+    40%, 100% {
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+    }
 }
 
 @-webkit-keyframes cssload-dot-move {
-	0% {
-		-webkit-transform: translateY(0);
-	}
-	18%, 22% {
-		-webkit-transform: translateY(-68px);
-	}
-	40%, 100% {
-		-webkit-transform: translateY(0);
-	}
+    0% {
+        -webkit-transform: translateY(0);
+    }
+    18%, 22% {
+        -webkit-transform: translateY(-68px);
+    }
+    40%, 100% {
+        -webkit-transform: translateY(0);
+    }
 }
 
 @keyframes cssload-dot-colors {
-	0% {
-		background-color: rgb(251,211,1);
-	}
-	25% {
-		background-color: rgb(255,50,112);
-	}
-	50% {
-		background-color: rgb(32,139,241);
-	}
-	75% {
-		background-color: rgb(175,225,2);
-	}
-	100% {
-		background-color: rgb(251,211,1);
-	}
+    0% {
+        background-color: rgb(251, 211, 1);
+    }
+    25% {
+        background-color: rgb(255, 50, 112);
+    }
+    50% {
+        background-color: rgb(32, 139, 241);
+    }
+    75% {
+        background-color: rgb(175, 225, 2);
+    }
+    100% {
+        background-color: rgb(251, 211, 1);
+    }
 }
 
 @-webkit-keyframes cssload-dot-colors {
-	0% {
-		background-color: rgb(251,211,1);
-	}
-	25% {
-		background-color: rgb(255,50,112);
-	}
-	50% {
-		background-color: rgb(32,139,241);
-	}
-	75% {
-		background-color: rgb(175,225,2);
-	}
-	100% {
-		background-color: rgb(251,211,1);
-	}
+    0% {
+        background-color: rgb(251, 211, 1);
+    }
+    25% {
+        background-color: rgb(255, 50, 112);
+    }
+    50% {
+        background-color: rgb(32, 139, 241);
+    }
+    75% {
+        background-color: rgb(175, 225, 2);
+    }
+    100% {
+        background-color: rgb(251, 211, 1);
+    }
 }
 
 @keyframes cssload-dot-rotate-1 {
-	0% {
-		-webkit-transform: rotate(-105deg);
-		        transform: rotate(-105deg);
-	}
-	100% {
-		-webkit-transform: rotate(270deg);
-		        transform: rotate(270deg);
-	}
+    0% {
+        -webkit-transform: rotate(-105deg);
+        transform: rotate(-105deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
 }
 
 @-webkit-keyframes cssload-dot-rotate-1 {
-	0% {
-		-webkit-transform: rotate(-105deg);
-	}
-	100% {
-		-webkit-transform: rotate(270deg);
-	}
+    0% {
+        -webkit-transform: rotate(-105deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+    }
 }
 
 @keyframes cssload-dot-rotate-2 {
-	0% {
-		-webkit-transform: rotate(165deg);
-		        transform: rotate(165deg);
-	}
-	100% {
-		-webkit-transform: rotate(540deg);
-		        transform: rotate(540deg);
-	}
+    0% {
+        -webkit-transform: rotate(165deg);
+        transform: rotate(165deg);
+    }
+    100% {
+        -webkit-transform: rotate(540deg);
+        transform: rotate(540deg);
+    }
 }
 
 @-webkit-keyframes cssload-dot-rotate-2 {
-	0% {
-		-webkit-transform: rotate(165deg);
-	}
-	100% {
-		-webkit-transform: rotate(540deg);
-	}
+    0% {
+        -webkit-transform: rotate(165deg);
+    }
+    100% {
+        -webkit-transform: rotate(540deg);
+    }
 }
 
 @keyframes cssload-dot-rotate-3 {
-	0% {
-		-webkit-transform: rotate(435deg);
-		        transform: rotate(435deg);
-	}
-	100% {
-		-webkit-transform: rotate(810deg);
-		        transform: rotate(810deg);
-	}
+    0% {
+        -webkit-transform: rotate(435deg);
+        transform: rotate(435deg);
+    }
+    100% {
+        -webkit-transform: rotate(810deg);
+        transform: rotate(810deg);
+    }
 }
 
 @-webkit-keyframes cssload-dot-rotate-3 {
-	0% {
-		-webkit-transform: rotate(435deg);
-	}
-	100% {
-		-webkit-transform: rotate(810deg);
-	}
+    0% {
+        -webkit-transform: rotate(435deg);
+    }
+    100% {
+        -webkit-transform: rotate(810deg);
+    }
 }
 
 @keyframes cssload-dot-rotate-4 {
-	0% {
-		-webkit-transform: rotate(705deg);
-		        transform: rotate(705deg);
-	}
-	100% {
-		-webkit-transform: rotate(1080deg);
-		        transform: rotate(1080deg);
-	}
+    0% {
+        -webkit-transform: rotate(705deg);
+        transform: rotate(705deg);
+    }
+    100% {
+        -webkit-transform: rotate(1080deg);
+        transform: rotate(1080deg);
+    }
 }
 
 @-webkit-keyframes cssload-dot-rotate-4 {
-	0% {
-		-webkit-transform: rotate(705deg);
-	}
-	100% {
-		-webkit-transform: rotate(1080deg);
-	}
+    0% {
+        -webkit-transform: rotate(705deg);
+    }
+    100% {
+        -webkit-transform: rotate(1080deg);
+    }
 }
 
 
-
-
-
-@media screen and (max-width: 800px){
-    .school_item{
+@media screen and (max-width: 800px) {
+    .school_item {
         margin: .5em;
     }
     .to_hidden{
@@ -535,7 +539,7 @@ a, a:hover{
     }
 }
 
-.test_container{
+.test_container {
     position: relative;
     width: 100%;
     padding: 1em;
@@ -546,12 +550,13 @@ a, a:hover{
     background-color: #230e34;
     border-radius: 6px;
 }
-.test_container button{
+
+.test_container button {
     position: relative;
-    top:0;
-    left:0;
+    top: 0;
+    left: 0;
     transform: translate(0);
-    margin-top: 1em;    
+    margin-top: 1em;
 }
 
 
@@ -559,17 +564,17 @@ a, a:hover{
     position: absolute;
     z-index: -1;
     opacity: 0;
-  }
+}
 
-  /* для элемента label связанного с .custom-radio */
-  .custom-radio+label {
+/* для элемента label связанного с .custom-radio */
+.custom-radio + label {
     display: inline-flex;
     align-items: center;
     user-select: none;
-  }
+}
 
-  /* создание в label псевдоэлемента  before со следующими стилями */
-  .custom-radio+label::before {
+/* создание в label псевдоэлемента  before со следующими стилями */
+.custom-radio + label::before {
     content: '';
     display: inline-block;
     width: 1em;
@@ -582,70 +587,72 @@ a, a:hover{
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50% 50%;
-  }
+}
 
-  /* стили при наведении курсора на радио */
-  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+/* стили при наведении курсора на радио */
+.custom-radio:not(:disabled):not(:checked) + label:hover::before {
     border-color: #b3d7ff;
-  }
+}
 
-  /* стили для активной радиокнопки (при нажатии на неё) */
-  .custom-radio:not(:disabled):active+label::before {
+/* стили для активной радиокнопки (при нажатии на неё) */
+.custom-radio:not(:disabled):active + label::before {
     background-color: #b3d7ff;
     border-color: #b3d7ff;
-  }
+}
 
-  /* стили для радиокнопки, находящейся в фокусе */
-  .custom-radio:focus+label::before {
+/* стили для радиокнопки, находящейся в фокусе */
+.custom-radio:focus + label::before {
     box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
-  }
+}
 
-  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
-  .custom-radio:focus:not(:checked)+label::before {
+/* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+.custom-radio:focus:not(:checked) + label::before {
     border-color: #80bdff;
-  }
+}
 
-  /* стили для радиокнопки, находящейся в состоянии checked */
-  .custom-radio:checked+label::before {
+/* стили для радиокнопки, находящейся в состоянии checked */
+.custom-radio:checked + label::before {
     border-color: #940bef;
     background-color: #9b0bef;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
-  }
+}
 
-  /* стили для радиокнопки, находящейся в состоянии disabled */
-  .custom-radio:disabled+label::before {
+/* стили для радиокнопки, находящейся в состоянии disabled */
+.custom-radio:disabled + label::before {
     background-color: #e9ecef;
-  }
+}
 
 
 .radio {
     cursor: pointer;
     margin-bottom: 0.4em;
 }
-label, label::before{
+
+label, label::before {
     cursor: pointer;
 }
 
-.test_variants{
+.test_variants {
     margin: 1em;
     display: flex;
     width: 80%;
     flex-wrap: wrap;
     justify-content: space-around;
-}    
+}
 
-.center_res{
+.center_res {
     text-align: center;
     font-size: 2em;
 }
-.results_test{
+
+.results_test {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.test_b{
+.test_b {
     top: 0;
     left: -2em
 }
@@ -655,8 +662,10 @@ label, label::before{
     text-align: center;
     padding: 1em 8%;   
 }
-@media screen and (max-width: 800px){
-    .test_b{
+
+@media screen and (max-width: 800px) {
+    .test_b {
+
         display: none
     }
     .main_info{
